@@ -1,0 +1,12 @@
+import numpy as np
+import math 
+x = np.array([1,2,3,4,5])
+def prod_ExceptSel_div(x):
+   total_product = math.prod(x)
+   prod_arr = []
+   for i in x:
+       prod_arr.append(total_product//i)
+   return prod_arr
+print("original array:",x)
+result = prod_ExceptSel_div(x)
+print("Product Array:",result)
